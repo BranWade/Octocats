@@ -1,16 +1,97 @@
 
-
-
-*, *::after, *::before{
-    box-sizing: inherit;
-}
 html {
     box-sizing: border-box;
 }
 
+*, *::before, *::after {
+    box-sizing: inherit;
+}
 
+body {
+    font-family: 'arial, 'helvetica', 'sans-serif';
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.octodex {
+    flex-wrap: wrap;
+}
+
+.authors img {
+    width: 25px;
+}
+
+
+
+.octocat {
+    margin: 10px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+
+}
+
+.octocat > a img {
+    width: 350px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+   
+} 
+
+.octodex, .image-footer, .image-caption {
+    display: flex;
+}
+
+.image-caption {
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: bold;
+    color: #666;
+}
+.image-caption a {
+    color:#111;
+}
+.image-footer {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
  
+.image-caption > span {
+    margin-right: 5px;
+    margin-left: 5px;
+}
 
+.image-number {
+    color:#ccc;
+    font-weight: bold;
+
+}
+
+.image-number::before {
+    content: "#"
+}
+
+
+.octocat::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 350px;
+    left:334px;
+    width:0;
+    height:0;
+
+
+}
+
+/*
 .octocat .image-footer img {
     display: flex;
     align-items: flex-start;
